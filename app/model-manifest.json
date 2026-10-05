@@ -1,10 +1,34 @@
 {
   "models": [
-    { "name": "nick_solo6_10s.sog4d (9.6 MB)",        "path": "nick_solo6_10s.sog4d",        "url": "../assets/nick_solo6_10s.sog4d" },
-    { "name": "guitar_take9_10s.sog4d (9.0 MB)",      "path": "guitar_take9_10s.sog4d",      "url": "../assets/guitar_take9_10s.sog4d" },
-    { "name": "nick_solo6_10s_web.ply (105 MB)",      "path": "nick_solo6_10s_web.ply",      "url": "../assets/nick_solo6_10s_web.ply" },
-    { "name": "guitar_take9_10s_web.ply (74 MB)",     "path": "guitar_take9_10s_web.ply",    "url": "../assets/guitar_take9_10s_web.ply" },
-    { "name": "nick_solo6_10s.ply (134 MB, master)",  "path": "nick_solo6_10s.ply",          "url": "../assets/nick_solo6_10s.ply" },
-    { "name": "guitar_take9_10s.ply (134 MB, master)","path": "guitar_take9_10s.ply",        "url": "../assets/guitar_take9_10s.ply" }
+    {
+      "name": "black.sog4d",
+      "path": "black.sog4d",
+      "url": "./black.sog4d"
+    },
+    {
+      "name": "green.sog4d",
+      "path": "green.sog4d",
+      "url": "./green.sog4d"
+    },
+    {
+      "name": "host_demo.sog4d",
+      "path": "host_demo.sog4d",
+      "url": "./host_demo.sog4d"
+    },
+    {
+      "name": "khaki.sog4d",
+      "path": "khaki.sog4d",
+      "url": "./khaki.sog4d"
+    },
+    {
+      "name": "ruan_demo.sog4d",
+      "path": "ruan_demo.sog4d",
+      "url": "./ruan_demo.sog4d"
+    },
+    {
+      "name": "ski_demo.sog4d",
+      "path": "ski_demo.sog4d",
+      "url": "./ski_demo.sog4d"
+    }
   ]
 }
