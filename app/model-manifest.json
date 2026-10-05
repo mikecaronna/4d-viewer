@@ -1,0 +1,10 @@
+{
+  "models": [
+    { "name": "nick_solo6_10s.sog4d (9.6 MB)",        "path": "nick_solo6_10s.sog4d",        "url": "../assets/nick_solo6_10s.sog4d" },
+    { "name": "guitar_take9_10s.sog4d (9.0 MB)",      "path": "guitar_take9_10s.sog4d",      "url": "../assets/guitar_take9_10s.sog4d" },
+    { "name": "nick_solo6_10s_web.ply (105 MB)",      "path": "nick_solo6_10s_web.ply",      "url": "../assets/nick_solo6_10s_web.ply" },
+    { "name": "guitar_take9_10s_web.ply (74 MB)",     "path": "guitar_take9_10s_web.ply",    "url": "../assets/guitar_take9_10s_web.ply" },
+    { "name": "nick_solo6_10s.ply (134 MB, master)",  "path": "nick_solo6_10s.ply",          "url": "../assets/nick_solo6_10s.ply" },
+    { "name": "guitar_take9_10s.ply (134 MB, master)","path": "guitar_take9_10s.ply",        "url": "../assets/guitar_take9_10s.ply" }
+  ]
+}

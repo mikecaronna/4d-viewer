@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4D capture viewer</title>
+<style>
+  :root { --bg:#0b0b0c; --fg:#f2f2f0; --dim:#8d8d88; --line:#26262a; --accent:#7fd1c1; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:56px 16px 80px; }
+  h1 { font-size:1.6rem; font-weight:600; margin:0 0 .3em; letter-spacing:-.01em; }
+  .sub { color:var(--dim); margin:0 0 2.5em; }
+  .scene { display:block; border:1px solid var(--line); border-radius:10px;
+           padding:20px 22px; margin:0 0 14px; text-decoration:none; color:inherit;
+           transition:border-color .15s, background .15s; }
+  .scene:hover { border-color:var(--accent); background:#121214; }
+  .scene b { display:block; font-size:1.1rem; margin-bottom:.15em; }
+  .scene span { color:var(--dim); font-size:.92rem; }
+  h2 { font-size:1rem; font-weight:600; margin:2.6em 0 .6em; }
+  p, li { color:#d3d3cf; }
+  li { margin-bottom:.35em; }
+  code { background:#17171a; padding:1px 6px; border-radius:4px; font-size:.88em; }
+  table { border-collapse:collapse; width:100%; margin:.6em 0 0; font-size:.93rem; }
+  td { padding:5px 10px 5px 0; border-bottom:1px solid var(--line); color:#d3d3cf; }
+  td:first-child { color:var(--dim); white-space:nowrap; width:42%; }
+  footer { margin-top:3.5em; padding-top:1.4em; border-top:1px solid var(--line);
+           color:var(--dim); font-size:.86rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>4D capture viewer</h1>
+  <p class="sub">Volumetric video from a camera array, played back in the browser.
+     Orbit with the mouse, scrub the timeline.</p>
+
+  <a class="scene" href="app/?lng=en&amp;zoom=3&amp;load=../assets/nick_guitar.sog4d">
+    <b>Guitar &mdash; 10 seconds</b>
+    <span>391,439 splats &middot; 10 MB &middot; 41 cameras</span>
+  </a>
+
+  <h2>How to move around</h2>
+  <ul>
+    <li>Left-drag to orbit.</li>
+    <li>Scroll to move in and out. Note it moves <em>in</em> when you scroll up.</li>
+    <li>The bar along the bottom plays and scrubs time.</li>
+    <li>Stay near the middle. Every camera pointed inward, so nothing outside
+        the ring they formed was ever photographed, and the view breaks down
+        if you travel out past them.</li>
+  </ul>
+
+  <h2>What this is</h2>
+  <p>Forty-one small cameras on stands, arranged around the subject, all
+     recording at once. The footage is reconstructed into a cloud of coloured
+     ellipsoids that each carry a position, a moment in time and a velocity,
+     so the scene moves rather than being a sequence of separate frames.</p>
+
+  <table>
+    <tr><td>Capture</td><td>41 Sony RX0 cameras, 29.97 fps</td></tr>
+    <tr><td>Length</td><td>10.01 seconds</td></tr>
+    <tr><td>Primitives</td><td>391,439</td></tr>
+    <tr><td>Download</td><td>10 MB, loads in about a second</td></tr>
+    <tr><td>Method</td><td>FreeTimeGS++, <a href="https://arxiv.org/abs/2605.03337" style="color:var(--accent)">arXiv 2605.03337</a></td></tr>
+  </table>
+
+  <h2>Honest limitations</h2>
+  <ul>
+    <li>Colour does not change with viewing angle. The compressed format drops
+        the higher-order terms that would carry that.</li>
+    <li>The file downloads whole before anything appears. There is no
+        progressive loading.</li>
+    <li>Some stray ellipsoids float around the edges. Those are the camera
+        stands and the rig photographing itself, reconstructed correctly.</li>
+  </ul>
+
+  <footer>
+    Captures &copy; Mike Caronna. Viewer built from
+    <a href="https://github.com/forgrabbit/supersplat4d" style="color:var(--dim)">supersplat4d</a>,
+    MIT, with two local changes recorded in <code>viewer-changes.patch</code>.
+  </footer>
+
+</div>
+</body>
+</html>
