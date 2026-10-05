@@ -1,6 +1,6 @@
 var version = "2.17.4";
 
-const buildId = '2026-10-05T12:06:10.556Z';
+const buildId = '2026-10-05T14:03:42.506Z';
 const cacheName = `superSplat-v${version}-${buildId}`;
 const cacheUrls = [
     './',
