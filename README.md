@@ -51,9 +51,6 @@ needed in the viewer.
   with viewing angle.
 - **No progressive loading.** The file downloads whole before the first frame
   appears. At 10 MB that is about a second.
-- **Only valid from inside the camera ring.** Every camera pointed inward, so
-  nothing outside that ring was photographed. Travel out past where the
-  cameras stood and the scene falls apart.
 - **Stray ellipsoids around the edges** are the stands and the rig
   photographing itself, reconstructed correctly.
 
