@@ -33,6 +33,28 @@ npm install
 BUILD_TYPE=prod npx rollup -c
 ```
 
+## Viewer mode and editor mode
+
+This application is SuperSplat, which is an editor. Served as a public viewer
+it handed every visitor the editing apparatus: a tool palette over a third of
+the scene, menus belonging to the tool rather than the work, and a live
+Rotation field that tipped the scene over if anyone typed in it.
+
+Viewer mode is the default. It keeps the scene, the timeline and the
+attribution, and hides the rest.
+
+**Add `&edit=1` to any scene link for the full editor**, with the toolbars,
+the scene panel and the frame rate readout. That is how scenes get cleaned,
+so it is one step away rather than removed.
+
+```
+.../app/?lng=en&edit=1&load=https://pub-5d477fff8046453485dba51fd2ed2aa6.r2.dev/nick_guitar.sog4d
+```
+
+Clean a scene by opening it with `edit=1`, deleting what should go, and
+exporting. `Tools/rx0-4d-pipeline/apply_edit.py` then carries that cleanup
+onto later builds of the same scene, so the work survives a retrain.
+
 ## The capture
 
 Forty-one Sony RX0 cameras on stands around the subject, all recording at once
