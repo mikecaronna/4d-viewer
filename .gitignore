@@ -1,1 +1,7 @@
 *.ply
+
+# Scene files live in Cloudflare R2, not here.
+# Four scenes come to 175 MB, git keeps every version forever, and GitHub
+# rejects a single file over 100 MB. Upload with:
+#   rclone copy assets r2:4d-scenes --include "*.sog4d" --progress
+assets/
