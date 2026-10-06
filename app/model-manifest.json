@@ -1,34 +1,3 @@
 {
-  "models": [
-    {
-      "name": "black.sog4d",
-      "path": "black.sog4d",
-      "url": "./black.sog4d"
-    },
-    {
-      "name": "green.sog4d",
-      "path": "green.sog4d",
-      "url": "./green.sog4d"
-    },
-    {
-      "name": "host_demo.sog4d",
-      "path": "host_demo.sog4d",
-      "url": "./host_demo.sog4d"
-    },
-    {
-      "name": "khaki.sog4d",
-      "path": "khaki.sog4d",
-      "url": "./khaki.sog4d"
-    },
-    {
-      "name": "ruan_demo.sog4d",
-      "path": "ruan_demo.sog4d",
-      "url": "./ruan_demo.sog4d"
-    },
-    {
-      "name": "ski_demo.sog4d",
-      "path": "ski_demo.sog4d",
-      "url": "./ski_demo.sog4d"
-    }
-  ]
+  "models": []
 }
