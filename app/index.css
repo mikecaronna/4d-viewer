@@ -2715,6 +2715,10 @@
   color: #937EE2;
 }
 
+#bottom-toolbar.pcui-hidden {
+  display: none;
+}
+
 #right-toolbar {
   position: absolute;
   right: 24px;
@@ -2786,6 +2790,10 @@
 }
 #right-toolbar > .right-toolbar-toggle.active svg {
   color: #937EE2;
+}
+
+#right-toolbar.pcui-hidden {
+  display: none;
 }
 
 #mobile-toolbar {
@@ -3418,6 +3426,10 @@
 }
 #mode-toggle:hover {
   color: #fff;
+}
+
+#mode-toggle.pcui-hidden {
+  display: none;
 }
 
 .settings-dialog {
