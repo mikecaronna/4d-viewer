@@ -1,19 +1,14 @@
 var version = "2.17.4";
 
-const buildId = '2026-10-06T20:24:19.563Z';
+const buildId = '2026-10-08T12:36:42.893Z';
 const cacheName = `superSplat-v${version}-${buildId}`;
 const cacheUrls = [
     './',
     './index.css',
     './index.html',
     './index.js',
-    './index.js.map',
     './jszip.js',
     './manifest.json',
-    './static/icons/logo-192.png',
-    './static/icons/logo-512.png',
-    './static/images/screenshot-narrow.jpg',
-    './static/images/screenshot-wide.jpg',
     './static/lib/lodepng/lodepng.js',
     './static/lib/lodepng/lodepng.wasm',
     './static/locales/de.json',
@@ -49,4 +44,3 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(caches.match(event.request)
         .then(response => response ?? fetch(event.request)));
 });
-//# sourceMappingURL=sw.js.map

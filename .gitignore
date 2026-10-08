@@ -5,3 +5,8 @@
 # rejects a single file over 100 MB. Upload with:
 #   rclone copy assets r2:4d-scenes --include "*.sog4d" --progress
 assets/
+
+# Source maps. A map embeds the complete source of every file in the bundle,
+# including upstream's, and was 12 MB of a 22 MB payload. Release builds do
+# not emit them; this keeps a debug build from being published by accident.
+*.map
