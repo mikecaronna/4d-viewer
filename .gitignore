@@ -4,7 +4,13 @@
 # Four scenes come to 175 MB, git keeps every version forever, and GitHub
 # rejects a single file over 100 MB. Upload with:
 #   rclone copy assets r2:4d-scenes --include "*.sog4d" --progress
-assets/
+assets/*
+# Audio tracks are the exception: a few tens of kilobytes, not forty megabytes,
+# so they belong in the repo. Keeping them here also avoids a second CORS
+# surface on R2 for a file this size. Note the pattern above must be
+# `assets/*` and not `assets/`: excluding the directory itself stops git
+# descending into it, and a negation below would never be reached.
+!assets/*.m4a
 
 # Source maps. A map embeds the complete source of every file in the bundle,
 # including upstream's, and was 12 MB of a 22 MB payload. Release builds do
