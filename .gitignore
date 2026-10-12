@@ -10,3 +10,5 @@ assets/
 # including upstream's, and was 12 MB of a 22 MB payload. Release builds do
 # not emit them; this keeps a debug build from being published by accident.
 *.map
+assets/tim_drums_local_test.sog4d
+.app_backup_before_audio/
